@@ -1,0 +1,22 @@
+@import "../../../../src/UI/Styles/colors.scss";
+
+.message {
+    width: 70%;
+    padding: 15px;
+    border-radius: 20px;
+    margin: 10px 0;
+    border: 1px solid $color-main-green;
+
+    &.contact {
+        align-self: flex-start;
+        background-color: #f0f2f5;
+        color: black;
+    }
+
+    &.user {
+        text-align: right;
+        align-self: flex-end;
+        background-color: #d9fdd3;
+        color: black;
+    }
+}

@@ -1,0 +1,19 @@
+@import "reset.css";
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: #00a783;
+}
+
+._container {
+    height: 95vh;
+    max-width: 1320px;
+    margin: 10px auto;
+    padding: 0 20px !important;
+}
