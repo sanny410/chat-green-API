@@ -2,7 +2,7 @@ import {FunctionComponent} from 'react';
 
 import ROUTES from 'Core/Const/Routes';
 import {observer} from 'mobx-react';
-import {BrowserRouter, Route, Routes, Navigate} from 'react-router-dom';
+import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import {useUserStore} from 'Services/Adapters/store';
 import Login from 'UI/Pages/Login';
 import Messages from 'UI/Pages/Messages';
@@ -13,9 +13,9 @@ import Messages from 'UI/Pages/Messages';
 const AppRouter: FunctionComponent = () => {
     const {isAuth} = useUserStore();
     return (
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
             <Routes>
-                <Route path={ROUTES.APP.LOGIN} element={!isAuth ? <Login /> : <Navigate to="/messages" />} />
+                <Route path={ROUTES.APP.LOGIN} element={!isAuth ? <Login /> : <Messages />} />
                 <Route path={ROUTES.APP.MESSENGER} element={<Messages />} />
                 <Route path="*" element={<Login />} />
             </Routes>

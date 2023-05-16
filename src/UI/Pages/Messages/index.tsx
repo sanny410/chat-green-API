@@ -1,13 +1,13 @@
 import {FunctionComponent, useEffect} from 'react';
 
-import {observer} from 'mobx-react';
-import SendMessageInput from 'UI/Components/SendMessageInput';
-import ChatWindow from 'UI/Components/ChatWindow';
-import ChatList from 'UI/Components/ChatList';
 import PersonIcon from '@mui/icons-material/Person';
-import Profile from 'UI/Components/Profile';
+import {observer} from 'mobx-react';
 import {useUserStore} from 'Services/Adapters/store';
 import {useUpdateCheck} from 'Services/Adapters/updatesCheck';
+import ChatList from 'UI/Components/ChatList';
+import ChatWindow from 'UI/Components/ChatWindow';
+import Profile from 'UI/Components/Profile';
+import SendMessageInput from 'UI/Components/SendMessageInput';
 import logo from 'UI/Styles/assets/logo.png';
 import './index.scss';
 
@@ -39,9 +39,7 @@ const Message: FunctionComponent = () => {
                 </div>
                 <div className="chat__wrapper">
                     <div className="contact__win">
-                        <div className="contact__icon">
-
-                        </div>
+                        <div className="contact__icon"></div>
                         <PersonIcon color="primary" />
                         <p>Получатель:</p>
                         <p>{activeChat.win.split('@')[0]}</p>

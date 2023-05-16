@@ -1,14 +1,14 @@
 import {FunctionComponent} from 'react';
 
-import {observer} from 'mobx-react';
-import IconButton from '@mui/material/IconButton';
-import FormControl from '@mui/material/FormControl';
-import OutlinedInput from '@mui/material/OutlinedInput';
-import InputAdornment from '@mui/material/InputAdornment';
 import SendIcon from '@mui/icons-material/Send';
+import FormControl from '@mui/material/FormControl';
+import IconButton from '@mui/material/IconButton';
+import InputAdornment from '@mui/material/InputAdornment';
+import OutlinedInput from '@mui/material/OutlinedInput';
+import {observer} from 'mobx-react';
 import {useForm, SubmitHandler} from 'react-hook-form';
-import {useUpdateChat} from 'Services/Adapters/updateChat';
 import {useUserStore} from 'Services/Adapters/store';
+import {useUpdateChat} from 'Services/Adapters/updateChat';
 
 interface Inputs {
     message: string;

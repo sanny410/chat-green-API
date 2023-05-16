@@ -2,19 +2,19 @@ import {FunctionComponent, useEffect} from 'react';
 
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import AddIcon from '@mui/icons-material/Add';
-import IconButton from '@mui/material/IconButton';
 import FormControl from '@mui/material/FormControl';
+import IconButton from '@mui/material/IconButton';
 import Input from '@mui/material/Input';
 import InputAdornment from '@mui/material/InputAdornment';
 import InputLabel from '@mui/material/InputLabel';
 import List from '@mui/material/List';
 import {Contact, ContactWin} from 'Domain/user';
 import {observer} from 'mobx-react';
-import {useUserStore} from 'Services/Adapters/store';
-import {ChatItem} from 'UI/Components/ChatItem';
-import {useGetContacts} from 'Services/Adapters/getContacts';
 import {useForm, SubmitHandler} from 'react-hook-form';
 import {useAddContact} from 'Services/Adapters/addContact';
+import {useGetContacts} from 'Services/Adapters/getContacts';
+import {useUserStore} from 'Services/Adapters/store';
+import {ChatItem} from 'UI/Components/ChatItem';
 
 import './index.scss';
 

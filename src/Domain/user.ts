@@ -7,12 +7,12 @@ export type ContactWin = string;
 export type IdMessage = number;
 
 export interface User {
-    idInstance: UserIdInstance,
-    apiToken: UserApiTokenInstance,
+    idInstance: UserIdInstance;
+    apiToken: UserApiTokenInstance;
 }
 
 export interface MessageRequest {
-    winContact: MessageWinContact,
+    winContact: MessageWinContact;
     message: MessageText;
     quotedMessageId?: QuotedMessageId;
     archiveChat?: boolean;
@@ -27,19 +27,17 @@ export interface Contact {
 export interface Message {
     win: ContactWin;
     idMessage: IdMessage;
-    text: MessageText
+    text: MessageText;
 }
 
 export interface UpdateInfo {
-    win: ContactWin
-    message: Message,
+    win: ContactWin;
+    message: Message;
 }
 
 export const updateContactList = (contact: Contact, contactList: Contact[]): Contact[] => {
-    return contactList.map((item,) => {
+    return contactList.map((item) => {
         if (item.win === contact.win) item = contact;
         return item;
     });
 };
-
-

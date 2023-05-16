@@ -7,7 +7,7 @@ interface Dependencies {
     userStore: UserStore;
 }
 
-const updateChat = (dependencies: Dependencies, newMessage: UpdateInfo, contact: Contact) => {
+const updateChat = (dependencies: Dependencies, newMessage: UpdateInfo, contact: Contact): void => {
     const updateChat = dependencies.userGateway.updateChat(
         contact,
         newMessage.message.idMessage,
