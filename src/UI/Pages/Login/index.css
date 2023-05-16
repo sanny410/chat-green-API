@@ -1,0 +1,29 @@
+.wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #f0f2f5;
+}
+.wrapper .login {
+    padding: 10px;
+    max-width: 450px;
+}
+.wrapper .login__form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #f0f2f5;
+}
+.wrapper .login__title {
+    align-self: center;
+    margin-bottom: 20px;
+}
+.wrapper .login__logo {
+    display: block;
+    margin-bottom: 20px;
+}
+
+/*# sourceMappingURL=index.css.map */
