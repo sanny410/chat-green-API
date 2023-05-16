@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/chat-green-API/static/css/main.fde4bb3d.css",
-    "main.js": "/chat-green-API/static/js/main.9699dd0d.js",
+    "main.js": "/chat-green-API/static/js/main.e3c4b2b4.js",
     "index.html": "/chat-green-API/index.html",
     "main.fde4bb3d.css.map": "/chat-green-API/static/css/main.fde4bb3d.css.map",
-    "main.9699dd0d.js.map": "/chat-green-API/static/js/main.9699dd0d.js.map"
+    "main.e3c4b2b4.js.map": "/chat-green-API/static/js/main.e3c4b2b4.js.map"
   },
   "entrypoints": [
     "static/css/main.fde4bb3d.css",
-    "static/js/main.9699dd0d.js"
+    "static/js/main.e3c4b2b4.js"
   ]
 }
